@@ -7,10 +7,14 @@
 // more than 40 at once, each apple only costs 1! Write a function that calculates
 // the price of an order of apples given the order amount. No hints this time!
 
-// I AM NOT DONE
+//--I AM NOT DONE
 
 // Put your function here!
 // fn ..... {
+fn calculate_apple_price(apple_count: i32) -> i32 {
+    let apple_price = if apple_count > 40 { 1 } else { 2 };
+    return apple_count * apple_price;
+}
 
 // Don't modify this function!
 #[test]
